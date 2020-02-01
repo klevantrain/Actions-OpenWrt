@@ -8,18 +8,18 @@
 
 name: Build OpenWrt
 
-on: 
+on:
   release:
     types: [published]
-   push:
-   branches: 
-    - master
+  push:
+    branches:
+      - master
     paths:
-     - '.config'
-  # schedule:
-  #  - cron: 0 8 * * 5
-  # watch:
-  # types: [started]
+      - '.config'
+#  schedule:
+#    - cron: 0 8 * * 5
+#  watch:
+#    types: [started]
 
 jobs:
   build:
