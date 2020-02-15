@@ -8,12 +8,9 @@
 name: X64-lean-dqylyln
 
 on:
-#  schedule:
-#    - cron: 0 22 * * *
   push:
     branches: 
       - master
-
 jobs:
   build:
     runs-on: ubuntu-latest
