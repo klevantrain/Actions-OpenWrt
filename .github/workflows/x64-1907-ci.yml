@@ -8,11 +8,13 @@
 name: X64-lean-dev-master
 
 on:
-  schedule:
-    - cron: 0 21 * * *
+ # schedule:
+ #  - cron: 0 21 * * *
  # push:
  # branches: 
  #   - master
+  release:
+    types: [published]
 
 jobs:
   build:
