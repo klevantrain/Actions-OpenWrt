@@ -5,7 +5,7 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-name: X64-OpenWrt-dqylyln-0215
+name: X64-OpenWrt-dqylyln-18.06
 
 on:
 #  schedule:
@@ -29,8 +29,8 @@ jobs:
           sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
     - name: Clone source code
       env: 
-        REPO_URL: https://github.com/Lienol/openwrt
-        REPO_BRANCH: dev-lean-lede
+        REPO_URL: https://github.com/openwrt/openwrt.git
+        REPO_BRANCH: openwrt-18.06
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
