@@ -5,7 +5,7 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-name: X64-openwrt-dev-19.07
+name: X64-openwrt-lean-lede
 
 on:
 #  schedule:
@@ -30,7 +30,7 @@ jobs:
     - name: Clone source code
       env: 
         REPO_URL: https://github.com/Lienol/openwrt.git
-        REPO_BRANCH: dev-19.07
+        REPO_BRANCH: dev-lean-lede
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
