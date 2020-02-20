@@ -11,8 +11,8 @@ on:
  # schedule:
  #  - cron: 0 21 * * *
   push:
-  branches: 
-    - master
+    branches: 
+      - master
   release:
     types: [published]
 
