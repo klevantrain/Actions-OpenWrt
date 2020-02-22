@@ -10,7 +10,7 @@ name: Build OpenWrt-lean-lede
 
 on:
   release:
-    types: [published]
+   # types: [published]
   push:
     branches:
       - master
