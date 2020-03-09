@@ -9,14 +9,13 @@
 name: Build OpenWrt-dev-1907
 
 on:
-  #release:
-  #  types: [published]
   push:
-    branches:
+    branches: 
       - master
+  release:
+    types: [published]
     paths:
       - 'x64-1907'
-
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
