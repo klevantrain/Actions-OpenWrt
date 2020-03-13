@@ -9,11 +9,11 @@
 name: Build OpenWrt-lean-lede
 
 on:
-  release:
-    types: [published]
   push:
     branches:
       - master
+  release:
+    types: [published]
     paths:
       - '.config'
 
