@@ -9,9 +9,9 @@
 name: Build OpenWrt-dev-1907
 
 on:
-  push:
-    branches: 
-      - master
+#  push:
+#    branches: 
+#      - master
   release:
     types: [published]
     paths:
