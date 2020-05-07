@@ -24,3 +24,7 @@ rm -rf package/openwrt-packages/luci-app-ssr-plus
 sed -i 's/LuCI Master/LuCI master by dqylyln/g' /usr/lib/lua/luci/version.lua
 sed -i '/luciversion/d' /usr/lib/lua/luci/version.lua
 echo 'luciversion = "19.07"' >> /usr/lib/lua/luci/version.lua
+
+#### update and install feeds
+./scripts/feeds update -a
+./scripts/feeds install
