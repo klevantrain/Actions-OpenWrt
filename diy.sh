@@ -17,14 +17,6 @@ git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverc
 #git clone https://github.com/openwrt-develop/luci-theme-atmaterial package/luci-theme-atmaterial
 #git clone https://github.com/apollo-ng/luci-theme-darkmatter.git
 
-#### remove duplicate app-ssr-plus
-rm -rf package/openwrt-packages/luci-app-ssr-plus
-
-#### modify luc display 
-#sed -i 's/LuCI Master/LuCI master by dqylyln/g' /usr/lib/lua/luci/version.lua
-#sed -i '/luciversion/d' /usr/lib/lua/luci/version.lua
-#echo 'luciversion = "19.07"' >> /usr/lib/lua/luci/version.lua
-
 #### update and install feeds
 ./scripts/feeds update -a
 ./scripts/feeds install
